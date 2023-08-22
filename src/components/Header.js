@@ -4,36 +4,35 @@ const Header = (props) => {
 
   return (<Nav>
     <Logo>
-      <img src="/images/logo.svg" />
+      <img src="/images/logo.svg" alt="logo" />
     </Logo>
     <NavMenu>
       <a href='/home'>
         <img src="/images/home-icon.svg" alt="HOME"></img>
         <span>HOME</span>
       </a>
-      <a>
+      <a href='/home'>
         <img src="/images/search-icon.svg" alt="SEARCH"></img>
         <span>SEARCH</span>
       </a>
-      <a>
+      <a href='/home'>
         <img src="/images/search-icon.svg" alt="SEARCH"></img>
 
         <span>WATCHLIST</span>
 
       </a>
-      <a>
+      <a href='/home'>
         <img src="/images/search-icon.svg" alt="SEARCH"></img>
 
         <span>ORIGINALS</span>
 
       </a>
 
-      <a>
+      <a href='/home'>
         <img src="/images/search-icon.svg" alt="SEARCH"></img>
-
         <span>MOVIES</span>
       </a>
-      <a>
+      <a href='/home'>
         <img src="/images/search-icon.svg" alt="SEARCH"></img>
 
         <span>SERIES</span>
@@ -58,6 +57,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding: 0 36px;
+letter-spacing:16px;
+z-index:3;
 `;
 
 const Logo = styled.a`
@@ -108,7 +109,7 @@ a{
   
   img{
     height:20px;
-    min-width:20px
+    min-width:20px;
     width:24px;
     z-index:auto;
   }
@@ -124,7 +125,7 @@ a{
     
     &:before{
       background-color: rgb(249, 249, 249);
-      border-radius: 0px, 0px, 0px, 0px;
+      border-radius: 0px, 0px, 4px, 4px;
       bottom: -6px;
       content:"";
       height:2px;
@@ -143,7 +144,7 @@ a{
   &:hover {
     span:before {
       transform:scaleX(1);
-      visibiliy:visible;
+      visibility:visible;
       opacity: 1 !important;
     }
     cursor:pointer;
