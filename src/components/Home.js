@@ -3,6 +3,8 @@ import ImgSlider from './ImgSlider'
 import Viewers from "./Viewers"
 import Recommended from "./Recommended"
 import NewDisney from "./NewDisney"
+import Originals from "./Originals"
+import Trending from "./Trending"
 const Home = () => {
 
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <Viewers />
       <Recommended />
       <NewDisney />
+      <Originals />
+      <Trending />
     </Container>
   )
 }
